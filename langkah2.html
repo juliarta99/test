@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Langkah 2</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="form">
+      <form action="" >
+            <h1>Pembuatan Akun Pendataan Tenaga Non ASN</h1>
+            <h4>Langkah 2: Lengkapi Data</h4>
+            <p>Silahkan isi formulir di bawah ini dengan lengkap dan benar</p><br>
+
+            <label for="nik">NIK</label><br>
+            <input type="tel" id="nik" required><br><br>
+
+            <label for="nama">Nama</label><br>
+            <input type="text" id="nama" required><br><br>
+
+            <label for="noHp">Nomor Handphone</label><br>
+            <input type="tel" id="noHp" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" required><br><br>
+
+            <label for="tempatLahir">Tempat Lahir sesuai KTP</label><br>
+            <input type="text" id="tempatLahir" required><br><br>
+
+            <label for="tglLahir">Tanggal Lahir sesuai KTP</label><br>
+            <input type="text" id="tglLahir" placeholder="Format dd-mm-yyyy" required><br><br>
+
+            <label for="Kabupaten">Kabupaten/Kota Lahir [Sesuai ijazah]</label><br>
+            <input type="text" id="Kabupaten" required><br><br>
+
+            <p>Jenis Kelamin</p>
+            <input type="radio" class="radio" id="l"><label for="l">Pria</label>
+            <input type="radio" class="radio" id="p"><label for="p">Wanita</label><br><br>
+
+            <div class="foto">
+            <div class="isifoto">
+                  <label for="fotoktp">Contoh Ktp yang benar</label><br>
+                  <img src="contohktp.jpg" class="ktp" alt="fotoktp"><br>
+            </div>
+            <div class="inputfoto">
+                  <i>File Scan KTP dengan ekstensi jpg/jpeg(maksimal 200Kb)</i><br>
+                  <input type="file" id="fotoktp" required><br>
+                  <p>KTP/Bukti Kependudukan resmi yang lainnya dapat diunggah di sini</p><br>
+            </div>
+            </div>
+
+            <div class="foto">
+            <div class="isifoto">
+                  <label for="fotoktp">Contoh Pas Foto yang benar</label><br>
+                  <img src="contohPasfoto.jpg" class="pasfoto" alt="fotoktp"><br>
+            </div>
+            <div class="inputfoto">
+                  <i>Pas Foto berwarna latar biru dengan ekstensi jpg/jpeg(maksimal 200Kb)</i><br>
+                  <input type="file" id="fotoktp" required><br>
+                  <p>Pas Foto yang diunggah adalah Pas Foto berwarna denga latar belakang biru yang tampak muka dengan jelas, seperti gambar disamping</p><br>
+            </div>
+            </div>
+      </form>
+      <form action="" class="form2">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" required><br><br>
+
+            <label for="password">KonfirmasiPassword</label><br>
+            <input type="password" id="password" required><br><br>
+
+            <label for="pertanyaan1">Pertanyaan Pengaman 1</label><br>
+            <select name="pertanyaan1" id="pertanyaan1">
+                  <option value=""></option>
+                  <option value="">Siapakah nama binatang peliharaan kamu?</option>
+                  <option value="">Pertanyaan2</option>
+            </select><br><br>
+
+            <label for="jawaban1">Jawaban Pengaman 1</label><br>
+            <input type="text" id="jawaban1"><br><br>
+
+            <label for="pertanyaan2">Pertanyaan Pengaman 2</label><br>
+            <select name="pertanyaan2" id="pertanyaan2">
+                  <option value=""></option>
+                  <option value="">apakah motto hidup kamu?</option>
+                  <option value="">Pertanyaan2</option>
+            </select><br><br>
+
+            <label for="jawaban1">Jawaban Pengaman 1</label><br>
+            <input type="text" id="jawaban1"><br><br>
+
+            <label for="captcha"><b>9</b><i>0</i><b>9</b><i>0</i></label><br>
+            <input type="tel" id="captcha" required><br><br>
+
+            <a href="biodata.html">Lanjutkan</a>
+      </form>
+      </div>
+</body>
+</html>

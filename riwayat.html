@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tambah Riwayat</title>
+      <style>
+            .riwayat{
+                  width: 100%;
+                  align-items: center;
+                  justify-content: center;
+            }
+            form{
+                  width: 80%;
+                  justify-content: center;
+                  align-items: center;
+            }
+            h1,
+            h2{
+                  width: 60%;
+                  justify-content: center;
+                  text-align: center;
+                  align-items: center;
+            }
+            h2{
+                  padding: 10px;
+                  color: darkblue;
+                  background-color: aquamarine;
+            }
+            input,
+            select{
+                  width: 100%;
+                  padding: 5px;
+            }
+            b{
+                  color: red;
+            }
+            a{
+                  background-color: red;
+                  margin-top: 50px;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                  transition: .5s;
+            }
+            a:hover{
+                  background-color: gray;
+                  color: black;
+            }
+            @media screen and (max-width:400px){
+                  .form1{
+                        width: 100%;
+                  }
+                  .form2{
+                        width: 100%;
+                  }
+                  form{
+                        flex-direction: column;
+                  }
+                  h1,
+                  h2{
+                        width: 100%;
+                  }
+            }
+      </style>
+</head>
+<body>
+      <div class="riwayat">
+      <h1>Tambah Riwayat</h1>
+      <h2>Data yang diinput harus sesuai SK</h2>
+
+      <form action="">
+            <table>
+                  <tr>
+                        <td><label for="no">Nomor SK <b>*</b></label></td>
+                        <td><input type="text" id="no"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="tanggal">Tanggal SK <b>*</b></label></td>
+                        <td><input type="text" id="tanggal" placeholder="Tanggal Surat Keterangan Bekerja"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="mulai">Tanggal Mulai Kerja <b>*</b></label></td>
+                        <td><input type="text" id="mulai" placeholder="Tanggal Mulai"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="akhir">Tanggal Berakhir Kerja <b>*</b></label></td>
+                        <td><input type="text" id="akhir" placeholder="Tanggal Berakhir Kerja"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="instanti">Instansi Penempatan <b>*</b></label></td>
+                        <td><input type="text" id="instansi"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="unit">Unit Kerja Penempatan <b>*</b></label></td>
+                        <td><input type="text" id="unit"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="jabatan">Jabatan <b>*</b></label></td>
+                        <td><input type="text" id="jabatan"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="pendidikan">Pendidikan <b>*</b></label></td>
+                        <td><input type="text" id="pendidikan">
+                        <p>isikan minimal 3 karakter dari pendidikan. Contoh: S1 Ilmu Komputer</p></td>
+                  </tr>
+                  <tr>
+                        <td><label for="penandatanganan">Jabatan Penandatanganan SK <b>*</b></label></td>
+                        <td><input type="text" id="penandatanganan"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="jenis">Jenis Jabatan Penandatanganan SK <b>*</b></label></td>
+                        <td><select name="jenis" id="jenis">
+                              <option value=""></option>
+                              <option value="Kepala Biro">Kepala Biro</option>
+                        </select></td>
+                  </tr>
+                  <tr>
+                        <td><label for="pembayaran">Jenis Pembayaran <b>*</b></label></td>
+                        <td><select name="jenis" id="jenis">
+                              <option value=""></option>
+                              <option value="APBN">APBN</option>
+                        </select></td>
+                  </tr>
+            </table>
+            <a href="">Simpan</a>
+      </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pengisian biodata</title>
+      <style>
+            form{
+                  width: 100%;
+                  display: flex;
+                  margin-bottom: 10px;
+            }
+            b{
+                  color: red;
+            }
+            h2{
+                  font-size: 30px;
+            }
+            .peringatan{
+                  background-color: rgb(233, 233, 132);
+                  color: chocolate;
+                  padding: 5px;
+                  border-radius: 5px;
+            }
+            .form1{
+                  width: 50%;
+            }
+            .form2{
+                  width: 50%;
+            }
+            input,
+            select{
+                  padding: 5px;
+                  width: 90%;
+            }
+            h1,
+            h2{
+                  text-decoration: underline;
+            }
+            .content{
+                  display: flex;
+            }
+            .ijazah{
+                  margin-right: 20px;
+            }
+            a{
+                  background-color: blue;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                  transition: .5s;
+            }
+            a:hover{
+                  background-color: gray;
+                  color: black;
+            }
+            @media screen and (max-width:400px){
+                  .form1{
+                        width: 100%;
+                  }
+                  .form2{
+                        width: 100%;
+                  }
+                  form{
+                        flex-direction: column;
+                  }
+            }
+      </style>
+</head>
+<body>
+      <h1>Ijazah Terakhir</h1>
+
+      <div class="content">
+            <p class="ijazah">Silahkan unggah Ijazah Terakhir Anda dengan ekstensi pdf (ukuran 100Kb - 1Mb)</p>
+            <input type="file" placeholder="unggah">
+      </div>
+      <form action="">
+            <table class="form1">
+                  <tr>
+                        <td><label for="nama">Nama</label></td>
+                        <td><input type="text" id="nama"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="tglLahir">Tanggal Lahir</label></td>
+                        <td><input type="text" id="tglLahir"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="kelamin">Jenis Kelamin</label></td>
+                        <td><select name="kelamin" id="kelamin">
+                              <option value=""></option>
+                              <option value="">Pria</option>
+                              <option value="">Wanita</option>
+                        </select></td>
+                  </tr>
+                  <tr>
+                        <td><label for="tempatLahir">Tempat Lahir Ijazah</label></td>
+                        <td><input type="text" id="tempatLahir"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="email">Email</label></td>
+                        <td> <input type="email" id="email"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="kab">Kabupaten/Kota Domisili</label></td>
+                        <td><input type="text" id="kab"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="kawin">Status Perkawinan <b>*</b></label></td>
+                        <td> <select name="kawin" id="kawin">
+                              <option value=""></option>
+                              <option value="">Menikah</option>
+                              <option value="">Cerai</option>
+                              <option value="">Belum Menikah</option>
+                        </select></td>
+                  </tr>
+            </table>
+      <table class="form2">
+            <tr>
+                  <td><label for="namainput">Nama Inputan <br> Pembuatan Akun</label></td>
+                  <td> <input type="text" id="namainput"></td>
+            </tr>
+            <tr>
+                  <td><label for="gelardepan">Gelar depan anda <br> (sesuai ijazah)</label></td>
+                  <td><input type="text" id="gelardepan">
+                        <p>Bila tidak meiliki gelar depan isi dengan -</p></td>
+            </tr>
+            <tr>
+                  <td><label for="gelarbelakang">Gelar belakang anda <br> (sesuai ijazah)</label></td>
+                  <td><input type="text" id="gelarbelakang">
+                        <p>Bila tidak meiliki gelar depan isi dengan -</p></td>
+            </tr>
+            <tr>
+                  <td><label for="tempatlahirKTP">Tempat Lahir KTP</label></td>
+                  <td><input type="text" id="tempatlahirKTP"></td>
+            </tr>
+            <tr>
+                  <td><label for="no">No Ponsel <b>*</b></label></td>
+                  <td><input type="tel" id="no">
+                        <p>hanya angka</p></td>
+            </tr>
+            <tr>
+                  <td>  <label for="alamat">Alamat Domisili</label></td>
+                  <td><input type="text" id="alamat"></td>
+            </tr>
+            <tr>
+                  <td><label for="agama">Agama <b>*</b></label></td>
+                  <td>
+                        <select name="agama" id="agama">
+                              <option value=""></option>
+                              <option value="">Hindu</option>
+                              <option value="">Islam</option>
+                              <option value="">Buddha</option>
+                              <option value="">Kristen</option>
+                              <option value="">Konghuchu</option>
+                        </select></td>
+            </tr>
+      </table>
+      </form>
+      <h2>Silahkan lengkapi data Anda</h2>
+      <form action="">
+            <table class="form1">
+                  <tr>
+                        <td><label for="tingkat">Tingkat Pendidikan <b>*</b></label>
+                        </td>
+                        <td><input type="text" id="tingkat"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="pendidikan">Pendidikan Terakhir <b>*</b></label></td>
+                        <td><input type="text" id="pendidikan"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="jabatan">Jabatan Terkahir</label></td>
+                        <td><input type="text" id="jabatan"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="unit">Unit Kerja Terakhir</label></td>
+                        <td><input type="text" id="unit"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="nomor">Nomor Ijazah</label></td>
+                        <td><input type="text" id="nomor"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="namaSklh">Nama Sekolah</label></td>
+                        <td><input type="text" id="namaSklh"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="lulus">Tanggal Lulus</label></td>
+                        <td><input type="tel" id="lulus"></td>
+                  </tr>
+            </table>
+            <table class="form2">
+                  <tr>
+                        <td><label for="tingkat2">Tingkat Pendidikan <b>*</b></label>
+                        </td>
+                        <td><input type="text" id="tingkat2"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="pendidikan2">Pendidikan Terakhir <b>*</b></label></td>
+                        <td><input type="text" id="pendidikan2"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="jabatan2">Jabatan Terkahir</label></td>
+                        <td><input type="text" id="jabatan2"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="unit2">Unit Kerja Terakhir</label></td>
+                        <td><input type="text" id="unit2"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="nomor2">Nomor Ijazah</label></td>
+                        <td><input type="text" id="nomor2"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="namaSklh2">Nama Sekolah</label></td>
+                        <td><input type="text" id="namaSklh2"></td>
+                  </tr>
+                  <tr>
+                        <td><label for="lulus2">Tanggal Lulus</label></td>
+                        <td><input type="tel" id="lulus2"></td>
+                  </tr>
+                  <tr>
+                        <td colspan="2">
+                              <div class="peringatan">
+                              <p>Jika terdapat perbedaan pada data awal, Anda dapat mengubah data pada kolom ini sesuai dengan SK terakhir yang anda miliki</p>
+                              </div>
+                        </td>
+                  </tr>
+            </table>
+      </form>
+      <div class="peringatan">
+            <dl>Petunjuk Pengisisan Biodata</dl>
+            <dd>1. Isilah bagian formulir yang wajib diisi pada bagian "Silahkan Lengkapi Data Anda" (ditandai dengan tanda *)</dd>
+            <dd>2. Anda diwajibkan mengisi gelar depan dan gelar belakang. Bila anda tidak memiliki gelar depan dan gelar belakang dilahkan isi dengan '-'</dd>
+            <dd>3. Anda Diwajibkan untuk mengunggah Ijazah Terakhir Anda dengan file berekstentsi .pdf dengan ukuran min 100Kb dan maks 1Mb</dd>
+            <dd>4. Jika sudah isilah CAPTCHA berikut di bawah ini dan klik tombol "Selanjutnya"</dd>
+      </div>
+      <h1>CAPTCHA</h1>
+      <label for="captcha"><b>9</b><i>0</i><b>9</b><i>0</i></label><br>
+      <input type="tel" id="captcha" required><br><br>
+      <a href="riwayat.html">Selanjutnya></a>
+</body>
+</html>

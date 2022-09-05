@@ -1,0 +1,71 @@
+h4,
+h1,
+p{
+      margin: 0;
+}
+.form{
+      width: 100%;
+      display: flex;
+}
+form{
+      width: 50%;
+}
+.form2{
+      margin-top: 80px;
+}
+input{
+      width: 80%;
+}
+.pasfoto{
+      width: 150px;
+      height: 200px;
+}
+.ktp{
+      width: 200px;
+      height: 100px;
+}
+.radio{
+      width: 10%;
+      float: left;
+      display: flex;
+}
+.foto{
+      display: flex;
+}
+.inputfoto{
+      flex-direction: column;
+}
+a{
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      transition: .5s;
+}
+a:hover{
+      background-color: gray;
+      color: black;
+}
+h1{
+      font-size: 30px;
+}
+.isifoto{
+      flex-direction: column;
+      width: 50%;
+}
+@media screen and (max-width:400px){
+      form{
+            width: 100%;
+      }
+      .form{
+            flex-direction: column;
+      }
+      .pasfoto{
+            width: 80px;
+            height: 100px;
+      }
+      .ktp{
+            width: 100px;
+            height: 50px;
+      }
+}
